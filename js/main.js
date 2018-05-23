@@ -179,7 +179,7 @@ $(function() {
 // Example MailChimp url: http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
 $('#ajaxChimp').ajaxChimp({
     language: 'eng',
-    url: 'https://mc.us18.list-manage.com/signup-form/settings?u=61a86897d461cf8b9821f7a9c&id=00b6d1e1f0'
+    url: 'https://mc.us18.list-manage.com/subscribe/post?u=61a86897d461cf8b9821f7a9c&id=00b6d1e1f0'
 });
 
 // Mailchimp translation
