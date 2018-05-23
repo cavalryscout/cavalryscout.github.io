@@ -109,7 +109,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    padding-top: 230px;
+    padding-top: 100px;
 }
 header h1 {
     font-size: 2.5em;
@@ -679,6 +679,7 @@ footer a:hover {
         font-size: 2.1em;
         line-height: 50px;
         margin-top: -20px;
+        padding-top: 20px;
     }
     header .countdown span {
         line-height: 5px;
@@ -733,6 +734,7 @@ footer a:hover {
     header .countdown {
         font-size: 2.3em;
         line-height: 50px;
+        padding-top: 20px;
     }
     header .countdown span {
         line-height: 5px;
