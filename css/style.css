@@ -1,6 +1,6 @@
 /*
     Name: Mountain
-    Description: Responsive Coming Soon 
+    Description: Responsive Coming Soon
     Version: 2.0
     Author: MountainTheme
 
@@ -153,28 +153,28 @@ header .mouse a {
 }
 @keyframes wobbleArrow
  {
- from   { 
+ from   {
 
- bottom: 40px; 
+ bottom: 40px;
 
  }
- to { 
+ to {
 
- bottom: 50px; 
+ bottom: 50px;
 
  }
  }
 
  @-webkit-keyframes wobbleArrow
  {
- from   { 
+ from   {
 
- bottom: 40px; 
+ bottom: 40px;
 
  }
- to { 
+ to {
 
- bottom: 50px; 
+ bottom: 50px;
 
  }
  }
@@ -282,7 +282,7 @@ header .mouse a {
     display: block;
     text-align: center;
 }
-.subscribe #ajaxChimp {
+.subscribe #chimp {
     text-align: center;
 }
 .subscribe input[type=text] {
@@ -369,11 +369,13 @@ header .mouse a {
     -moz-transition: all 0.3s!important;
     transition: all 0.3s!important;
 }
+/* WTF
 .contact input[type='email'] {
     right: 15px;
     position: absolute;
     top: 0px;
 }
+*/
 .contact input[type='text'],
 .contact input[type='email']:focus {
     border-bottom: 2px solid #bbb;

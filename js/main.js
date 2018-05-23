@@ -184,4 +184,16 @@ function initGoogleMap() {
   });
 }
 
+google.maps.event.addDomListener(window, "load", initGoogleMap);
+
+/* ================================= */
+/* :::::::: 8. Google Analytics :::::::::: */
+/* ================================= */
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-119768889-1');
+
 /* EOF */
