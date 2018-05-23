@@ -381,32 +381,6 @@ var style = [{
     }
 ];
 
-//set google map options
-var map_options = {
-        center: new google.maps.LatLng(latitude, longitude),
-        zoom: map_zoom,
-        panControl: false,
-        zoomControl: false,
-        mapTypeControl: false,
-        streetViewControl: false,
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        scrollwheel: false,
-        styles: style,
-    }
-
-var map_marker = new google.maps.Marker({
-    position: new google.maps.LatLng(latitude, longitude),
-    map: map,
-    title: 'Brisbane, Australia',
-    visible: true,
-    icon: marker_url,
-});
-
-google.maps.event.addDomListener(window, "resize", function() {
-    var center = map.getCenter();
-    google.maps.event.trigger(map, "resize");
-    map.setCenter(center);
-});
 
 //add custom buttons for the zoom-in/zoom-out on the map
 function CustomZoomControl(controlDiv, map) {
@@ -425,11 +399,39 @@ function CustomZoomControl(controlDiv, map) {
     });
 }
 
-var zoomControlDiv = document.createElement('div');
-var zoomControl = new CustomZoomControl(zoomControlDiv, map);
-
 function initGoogleMap() {
+  //set google map options
+  var map_options = {
+          center: new google.maps.LatLng(latitude, longitude),
+          zoom: map_zoom,
+          panControl: false,
+          zoomControl: false,
+          mapTypeControl: false,
+          streetViewControl: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+          scrollwheel: false,
+          styles: style,
+      }
+
+  var map_marker = new google.maps.Marker({
+      position: new google.maps.LatLng(latitude, longitude),
+      map: map,
+      title: 'Brisbane, Australia',
+      visible: true,
+      icon: marker_url,
+  });
+
+  google.maps.event.addDomListener(window, "resize", function() {
+      var center = map.getCenter();
+      google.maps.event.trigger(map, "resize");
+      map.setCenter(center);
+  });
+
   map = new google.maps.Map(document.getElementById('google-container'), map_options);
+
+  var zoomControlDiv = document.createElement('div');
+  var zoomControl = new CustomZoomControl(zoomControlDiv, map);
+
   //insert the zoom div on the top left of the map
   map.controls[google.maps.ControlPosition.LEFT_TOP].push(zoomControlDiv);
 }
