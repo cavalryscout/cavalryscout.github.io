@@ -178,13 +178,11 @@ $(function() {
 var map;
 
 function initGoogleMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
+  map = new google.maps.Map(document.getElementById('google-container'), {
     center: {lat: -27.4704073, lng: 153.0142954},
     zoom: 10
   });
 }
-
-google.maps.event.addDomListener(window, "load", initGoogleMap);
 
 /* ================================= */
 /* :::::::: 8. Google Analytics :::::::::: */
