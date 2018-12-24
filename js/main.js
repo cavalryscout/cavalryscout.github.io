@@ -84,7 +84,7 @@ $("header").backstretch("images/background2.jpg");
 // To change date, simply edit: var endDate = "Dec 01, 2015 20:39:00";
 
 $(function() {
-    var endDate = "Jan 01, 2019 00:00:00";
+    var endDate = "Apr 01, 2019 00:00:00";
     $('.countdown').countdown({
         date: endDate,
         render: function(data) {
